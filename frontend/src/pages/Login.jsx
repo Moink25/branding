@@ -7,9 +7,9 @@ const Login = () => {
   const [state, setState] = useState("Login");
 
   // Get environment variables
-  const adminName = process.env.REACT_APP_ADMIN_NAME;
-  const adminEmail = process.env.REACT_APP_ADMIN_EMAIL;
-  const adminPassword = process.env.REACT_APP_ADMIN_PASSWORD;
+  const adminName = process.env.VITE_ADMIN_NAME;
+  const adminEmail = process.env.VITE_ADMIN_EMAIL;
+  const adminPassword = process.env.VITE_ADMIN_PASSWORD;
 
   const login = async (e) => {
     e.preventDefault();  // Prevent form default submission behavior
